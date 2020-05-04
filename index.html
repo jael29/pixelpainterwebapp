@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pixel Art Maker</h1>
+
+    <h2>Choose Grid Size</h2>
+    <form id="sizePicker">
+        Grid Height:
+        <input type="number" id="inputHeight" name="height" min="1" value="1">
+        Grid Width:
+        <input type="number" id="inputWidth" name="width" min="1" value="1">
+        <input type="submit">
+        <button type="reset">Reset</button>
+    </form>
+<p id="dimensiones">
+    <h2>Instructions</h2>
+    <ol>
+        <li>Select width and height.</li>
+        <li>Press submit button</li>
+        <li>Press reset if you want a new canvas</li>
+        <li>The default color is black. <br>
+        However, you can click on the black color icon to select other colors.</li>
+        <li>Once you click submit. before clicking submit again with new or same dimensions press reset.</li>
+        <li>Close the color box, before starting over. </li>
+    </ol>
+</p>
+    <h2>Pick A Color</h2>
+    <input type="color" id="colorPicker">
+
+    <h2>Design Canvas</h2>
+    <table id="pixelCanvas">
+<!-- here goes the generated table. -->
+    
+    </table>
+
+    <script src="designs.js"></script>
+</body>
+</html>
